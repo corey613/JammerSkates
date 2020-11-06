@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+
+}
+
+#galleryContainer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#galleryTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 5px red;
+}
+
+#titleG {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+}
+
+
+.gContainer {
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.imgGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: auto;
+    gap: 2.5rem;
+    grid-template-areas:
+     'img4 img4 img7 img2'
+     'img4 img4 img10 img13'
+     'img5 img8 img6 img1'
+     'img12 img12 img9 img1'
+     'img12 img12 img9 img11'
+     'img3 img14 img15 img16';
+}
+
+.imgGallery a {
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.imgGallery a ion-icon {
+    color: rgba(255,255,255, 0.6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255,255,255, 0.6);
+    border-radius: .4rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+.imgGallery a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0, 0.8);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.imgGallery a:hover ion-icon,
+.imgGallery a:hover::before{
+    opacity: 1;
+}
+
+.img1 {
+    grid-area: img1;
+    min-height: 51.5rem;
+    background-image: url("galleryimg/1.JPG");
+}
+.img2 {
+    grid-area: img2;
+    background-image: url("galleryimg/2.jpg");
+}
+.img3 {
+    grid-area: img3;
+    background-image: url("galleryimg/3.jpg");
+}
+.img4 {
+    grid-area: img4;
+    min-height: 51.5rem;
+    background-image: url("galleryimg/4.JPG");
+}
+.img5 {
+    grid-area: img5;
+    background-image: url("galleryimg/5.JPG");
+}
+.img6 {
+    grid-area: img6;
+    background-image: url("galleryimg/6.JPG");
+}
+.img7 {
+    grid-area: img7;
+    background-image: url("galleryimg/7.JPG");
+}
+.img8 {
+    grid-area: img8;
+    background-image: url("galleryimg/8.JPG");
+}
+.img9 {
+    grid-area: img9;
+    min-height: 51.5rem;
+    background-image: url("galleryimg/9.JPG");
+}
+.img10 {
+    grid-area: img10;
+    background-image: url("galleryimg/10.JPG");
+}
+.img11 {
+    grid-area: img11;
+    background-image: url("galleryimg/11.JPG");
+}
+.img12 {
+    grid-area: img12;
+    min-height: 51.5rem;
+    background-image: url("galleryimg/12.JPG");
+}
+.img13 {
+    grid-area: img13;
+    background-image: url("galleryimg/13.JPG");
+}
+.img14 {
+    grid-area: img14;
+    background-image: url("galleryimg/14.JPG");
+}
+.img15 {
+    grid-area: img15;
+    background-image: url("galleryimg/15.PNG");
+}
+.img16 {
+    grid-area: img16;
+    background-image: url("galleryimg/16.PNG");
+}
+
+
+
+
+
+@media screen and (max-width: 900px){
+    .imgGallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 2.5rem;
+        grid-template-areas:
+         'img4 img4 img4 img4'
+         'img4 img4 img4 img4'
+         'img5 img5 img8 img8'
+         'img5 img5 img8 img8 '
+         'img12 img12 img12 img12 '
+         'img12 img12 img12 img12'
+         'img7 img7 img2 img2'
+         'img7 img7 img2 img2'
+         'img10 img10 img13 img13'
+         'img10 img10 img13 img13 '
+         'img9 img9 img1 img1 '
+         'img9 img9 img1 img1'
+         'img9 img9 img1 img1 '
+         'img6 img6 img11 img11'
+         'img6 img6 img11 img11'
+         'img14 img14 img3 img3'
+         'img14 img14 img3 img3'
+         'img16 img16 img15 img15'
+         'img16 img16 img15 img15';
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    #titleG {
+        font-size: 50px;
+    }
+    
+}
+
+

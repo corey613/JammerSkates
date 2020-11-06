@@ -1,0 +1,151 @@
+#contactHeader {
+    height: 100vh;
+}
+
+
+
+#mainContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#rightContainer {
+   
+    width: 300px;
+    height: 450px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 10px 10px; 
+    background: white;
+    border: solid 3px rgba(53, 48, 48, 0.856) ;
+  
+}
+
+#titleContainer {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contactTitle {
+    font-size: 25px;
+    font-family: 'Open sans', sans-serif;
+    color: black;
+    margin: 10px 0;    
+    border-bottom: solid 3px black;
+}
+
+
+
+#formContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input {
+    width: 270px;
+    height: 35px;
+    margin: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: #1F1F1F 2px solid;
+    outline: none;
+    color:  black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-indent: 7px;
+    border-radius: 4px 4px 0 0;
+}
+
+input:hover, textarea:hover, 
+input:focus, textarea:focus {
+    animation: input 0.5s ease-in forwards 1;
+}
+
+
+
+
+
+
+textarea {
+    resize: none;
+    outline: none;
+    border: solid 2px #1F1F1F;
+    width: 270px;
+    height: 190px;
+    background: none;
+    letter-spacing: 1px;
+    font-family: 'Open sans', sans-serif;
+    margin-top: 20px;
+    color: #1F1F1F;
+    text-indent: 5px;
+}
+
+::placeholder {
+    color: #1F1F1F;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+#submitButton {
+    width: 145px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    border: solid 1px black;
+    background: rgba(55, 222, 252, 0.8);
+    color: black;
+ 
+}
+
+#submitButton:hover,
+#submitButton:focus{
+    animation: button 1s ease-in-out forwards 1;
+}
+
+#submitButton:active {
+    transform: translateY(1px);
+}
+
+
+
+@keyframes button {
+ 0% {
+     background: rgba(55, 222, 252, 0.8);
+     color: black;
+ }
+
+ 100% {
+    background: #d6261c;
+    color: white;
+ }
+}
+
+
+@keyframes input {
+    0% {
+        background: none;
+    }
+
+    100% {
+        background: rgba(55, 222, 252, 0.25);;
+    }
+}

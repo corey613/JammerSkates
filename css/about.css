@@ -1,0 +1,60 @@
+header {
+    height: 80vh;
+    background: url(img/DSC00938.JPG) no-repeat 50% 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#aboutTitle {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#aboutSection {
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    justify-content: space-around;
+   text-align: center;
+}
+
+.titles {
+    font-family: 'Open sans', sans-serif;
+    text-shadow: none;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#leftText {
+    border: solid 1px black;
+    width: 30vw;
+}
+
+#rightText {
+    border: solid 1px red;
+    width: 30vw;
+}
+
+#button {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#findOut {
+    width: 300px;
+    height: 50px;
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
