@@ -449,7 +449,19 @@ hr {
 
 @media screen and (max-width: 430px){
     h2{
-        font-size: 40px;
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+}
+
+
+@media screen and (max-width: 350px){
+    h2 {
+        margin-left: 50px;
     }
 }
 
