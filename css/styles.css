@@ -156,7 +156,7 @@ h3 {
 #explore {
     font-size: 30px;
     width: 230px;
-    height: 80px;
+    height: auto;
      background-color:rgba(0,0,0,0.8);
      border: solid 1px white;
 }
@@ -403,7 +403,7 @@ hr {
         font-size: 30px;
         border-radius: 0;
         width: 200px;
-        height: 80px;
+        height: auto;
         padding-top: 0px;
     }
     
