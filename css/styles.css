@@ -125,11 +125,12 @@ button {
 }
 
 #headerContainer {
-    width: 700px;
+    width: 100vw;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
    justify-content: space-around;
    animation: scale 1s ease-out;
   
@@ -145,7 +146,7 @@ h2, h3, #explore {
 
 h2{
     font-size: 50px;
-    margin-left: 90px;
+    
 }
 
 h3 {
@@ -156,7 +157,6 @@ h3 {
     font-size: 30px;
     width: 230px;
     height: 80px;
-    margin: 0 0 0 200px;
      background-color:rgba(0,0,0,0.8);
      border: solid 1px white;
 }
@@ -368,30 +368,9 @@ hr {
 @media screen and (max-width: 690px){
     
 
-    #headerContainer {
-        width: 350px;
-        height: 500px;
-    }
-        
-
-    h2{
-        font-size: 56px;
-        margin: 0 0 0 50px;
-    }
-    h3 {
-        font-size: 25px;
-        margin: 0 0 0 60px;
-    }
-    
-    
-     #explore {
-        font-size: 30px;
-        border-radius: 0;
-        width: 200px;
-        height: 120px;
-        padding-top: 0px;
-        margin-left: 80px ;
-    }
+ h3 {
+     font-size: 25px;
+ }
 
    
 
@@ -406,7 +385,27 @@ hr {
 
 
 @media screen and (max-width: 580px){
-  
+    #headerContainer {
+        width: 100vw;
+        height: 500px;
+    }
+        
+
+    h2{
+        font-size: 46px;
+    }
+    h3 {
+        font-size: 20px
+    }
+    
+    
+     #explore {
+        font-size: 30px;
+        border-radius: 0;
+        width: 200px;
+        height: 120px;
+        padding-top: 0px;
+    }
     
 footer {
     width: auto;
@@ -448,7 +447,11 @@ hr {
 
 }
 
-
+@media screen and (max-width: 430px){
+    h2{
+        font-size: 40px;
+    }
+}
 
 
 
